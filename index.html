@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+            canvas{                
+                display: block;
+                position: absolute;
+	            top:0;
+	            bottom: 0;
+	            left: 0;
+	            right: 0;     	
+	            margin: auto;
+                border-radius: 15px;
+            }
+            #startButton{
+                display: block;
+                position: absolute;
+                top:90%;
+                left:42%; 
+                margin: auto;
+                border-radius: 12px; 
+                background-color: purple;
+                color: white;
+                padding: 15px 25px;
+            }
+            .finishText{
+                width: 100%;
+                /* position: relative; */
+            }
+             body{
+                background-image: url('img/background.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+            } 
+        </style>
+    </head>        
+        <div class="finishText">
+            <canvas id="snake" width="608" height="608"></canvas>
+            <button id="startButton" value="Press any arrow key Start Game">Press any arrow key Start Game</button>
+        </div>                   
+    <script src="snake.js"></script>
+</html>
